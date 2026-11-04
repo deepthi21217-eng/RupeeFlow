@@ -1,0 +1,2 @@
+[functions.send-loan-reminder]
+verify_jwt = false

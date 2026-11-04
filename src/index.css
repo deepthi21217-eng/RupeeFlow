@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    @apply bg-slate-50 text-slate-800;
+  }
+  * {
+    @apply border-slate-200;
+  }
+}
+
+@layer components {
+  .rf-card {
+    @apply bg-white rounded-xl border border-slate-200 shadow-sm;
+  }
+  .rf-btn-primary {
+    @apply inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-sm;
+  }
+  .rf-btn-secondary {
+    @apply inline-flex items-center gap-2 px-4 py-2 bg-white text-slate-700 border border-slate-300 rounded-lg font-medium hover:bg-slate-50 transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-sm;
+  }
+  .rf-btn-ghost {
+    @apply inline-flex items-center gap-2 px-3 py-2 text-slate-600 rounded-lg font-medium hover:bg-slate-100 transition-colors text-sm;
+  }
+  .rf-input {
+    @apply w-full px-3 py-2 bg-white border border-slate-300 rounded-lg text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+  }
+  .rf-select {
+    @apply w-full px-3 py-2 bg-white border border-slate-300 rounded-lg text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent cursor-pointer;
+  }
+  .rf-badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  .rf-label {
+    @apply text-xs font-medium text-slate-600 mb-1 block;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

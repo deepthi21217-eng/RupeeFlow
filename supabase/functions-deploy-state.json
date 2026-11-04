@@ -1,0 +1,9 @@
+{
+  "projectId": "72268209",
+  "functions": {
+    "send-loan-reminder": {
+      "hasChanged": false,
+      "hash": "fd50a52cfd2783e60db4ff20e08634274434efc9e423eaa897b0f579b2fdce16"
+    }
+  }
+}
